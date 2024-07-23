@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <!-- twemoji cdn -->
+    <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+        </script>
+</head>
+<body>
+    <div class="header"><span style="margin-left: 1%;"><img src="./fire.png" style="vertical-align: middle;height: 1em;margin-top:-4px;font-weight:300;"> Fire emoji</span></div>
+    <div class="main">
+        <img alt="⚛️" aria-label="⚛️" src="./fire.png" class="heading-icon">
+        <h1>This is a test</h1> 
+        <h2>Hi</h2>
+        <h3>test</h3>
+        <p>$f(x)$</p>
+        <h3>test</h3>
+        <p>haiii :)</p>
+        <p>nmoooo</p>
+    </div> 
+</body>
+<style>
+    @font-face {
+        font-family: 'Segoe';
+        src: url('./segoe.ttf') format('truetype');
+    }
+
+    body, html {
+        font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+        height: 100%;
+        overflow: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    .header {
+        height: 5vh;
+        display: flex; /* Horizontal centering */
+        align-items: center; 
+    }
+    .main {
+        margin-left: 35% !important;
+        margin-right: 35%;
+        margin-top: 5%;
+    }
+
+    .heading-icon {
+        height: 78px;
+    }
+
+    h1 {
+        caret-color: rgb(55, 53, 47);
+        color: rgb(55, 53, 47);
+        cursor: text;
+        fill: rgb(55, 53, 47);
+        font-size: 40px;
+        font-weight: 700;
+        height: 51px;
+        line-height: 48px;
+        outline-color: rgb(55, 53, 47);
+        margin-top: 12px;
+        margin-block-end: 0px;
+    }
+
+    h2 {
+        caret-color: rgb(55, 53, 47);
+        color: rgb(55, 53, 47);
+        cursor: text;
+        fill: rgb(55, 53, 47);
+        font-size: 30px;
+        font-weight: 600;
+        height: 45px;
+        margin-block-end: 0px;
+    }
+
+    h3 {
+        caret-color: rgb(55, 53, 47);
+        color: rgb(55, 53, 47);
+        cursor: text;
+        fill: rgb(55, 53, 47);
+        font-size: 24px;
+        font-weight: 600;
+        height: 37.2px;
+        margin-block-end: 0px;
+    }
+
+    p {
+        block-size: 30px;
+        caret-color: rgb(55, 53, 47);
+        color: rgb(55, 53, 47);
+        cursor: text;
+        fill: rgb(55, 53, 47);
+        font-size: 16px;
+        font-weight: 400;
+        height: 30px;
+        line-height: 24px;
+        margin-block-end: 0px;
+        margin-block-start: 0px;
+    }
+</style>
+<script>
+    twemoji.parse(document.body)
+</script>
+</html>
