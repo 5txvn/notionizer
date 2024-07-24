@@ -1,5 +1,4 @@
-function helloWorld() {
-    return test
+exports.create = (options) => {
+    global.title = options.title ? options.title : "NotionML Page";
+    //global.
 }
-
-exports.helloWorld = helloWorld;
