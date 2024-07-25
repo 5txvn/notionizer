@@ -50,6 +50,8 @@ exports.create = (options) => {
     HTML += `\n\t.heading-icon {\n\t\theight: 78px;\n\t}`;
     //add styles for main heading
     HTML += `\n\th1 {\n\t\tcolor: rgb(55, 53, 47);\n\t\tfont-size: 40px;\n\t\tfont-weight: 700;\n\t\theight: 51px;\n\t\tline-height: 48px;\n\t\tmargin-top: 12px;\n\t\tmargin-block-end: 0px;\n\t}`;
+    //add color tags
+    HTML += `\n\t.gray, .grey {\n\t\tcolor: #787774;\n\t}\n\t.brown {\n\t\tcolor: #9f6b53\n\t}\n\t.orange {\n\t\tcolor: #d9730d;\n\t}`
     //close the HTML
     HTML += `\n</style>\n</html>`;
     
