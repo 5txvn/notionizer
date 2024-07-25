@@ -1,5 +1,5 @@
 const nml = require('./notionml');
-const distance = require('jaro-winkler')
+//const distance = require('jaro-winkler')
 
 /*
 let max = [0, ""]
@@ -27,7 +27,17 @@ console.log(max);
 */
 
 
-nml.create({
+nml.init({
     title: "Fire",
-    pageIcon: "fire"
+    pageIcon: "fire",
+    heading: "fireeee"
 })
+
+nml.add("h1", {
+    text: "this is a test",
+    color: "brown"
+})
+
+nml.compile({
+    exportPath: "./export.html"
+});
