@@ -72,7 +72,9 @@ exports.compile = (options) => {
     //add styles for main heading
     HTML += `\n\th1 {\n\t\tcolor: rgb(55, 53, 47);\n\t\tfont-size: 40px;\n\t\tfont-weight: 700;\n\t\theight: 51px;\n\t\tline-height: 48px;\n\t\tmargin-top: 12px;\n\t\tmargin-block-end: 0px;\n\t}`;
     //add color tags
-    HTML += `\n\t.gray, .grey {\n\t\tcolor: #787774;\n\t}\n\t.brown {\n\t\tcolor: #9f6b53\n\t}\n\t.orange {\n\t\tcolor: #d9730d;\n\t}`
+    HTML += `\n\t.gray, .grey { color: #787774; }\n\t.brown { color: #9f6b53 }\n\t.orange { color: #d9730d; }\n\t.yellow { color: #cb912f; }\n\t.green { color: #448361; }\n\t.black { color: #37352f; }\n\t.blue { color: #337ea9; }\n\t.purple { color: #9065b0 }\n\t.pink { color: #c14c8a }\n\t.red { color: #d44c47 }`;
+    //add background color tags
+    HTML += `\n\t.bg-gray, .bg-grey { background-color: #f1f1ef }\n\t.bg-brown { background-color: #f4eeee }\n\t.bg-orange { background-orange: #faebdd }`
     //close the HTML
     HTML += `\n</style>\n</html>`;
     //check if the user specified an export path
